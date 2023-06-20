@@ -9,7 +9,7 @@ import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 
 @BindingAdapter("android:imageUrl", "android:progressBar")
-fun loadPhotoUrl(view:ImageView, url:String, pb:ProgressBar) {
+fun loadPhotoUrl(view:ImageView, url:String?, pb:ProgressBar) {
     view.loadImage(url, pb)
 }
 fun ImageView.loadImage(url: String?, progressBar: ProgressBar) {
